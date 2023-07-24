@@ -1,5 +1,6 @@
 //
-//  SceneDelegate.swift
+
+
 //  instagram
 //
 //  Created by R82 on 24/07/23.
