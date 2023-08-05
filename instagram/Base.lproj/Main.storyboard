@@ -411,61 +411,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y7D-8c-r9D">
-                                <rect key="frame" x="16" y="374" width="361" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="" image="more"/>
-                                    <segment title="" image="home (2)"/>
-                                </segments>
-                                <connections>
-                                    <segue destination="1cN-Re-Xy3" kind="presentation" id="lT1-Hz-D5S"/>
-                                </connections>
-                            </segmentedControl>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgh-yu-9sI">
-                                <rect key="frame" x="16" y="413" width="361" height="356"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-Bh-DIZ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-ge-yBB">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="2IM-Fl-Fu0"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="S2N-Nl-sE9"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pnO-Zq-rSg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yw2-Bh-DIZ" firstAttribute="leading" secondItem="pnO-Zq-rSg" secondAttribute="leading" id="7Yu-Jl-8hl"/>
+                            <constraint firstItem="yw2-Bh-DIZ" firstAttribute="trailing" secondItem="pnO-Zq-rSg" secondAttribute="trailing" id="9Fd-PV-pjz"/>
+                            <constraint firstItem="yw2-Bh-DIZ" firstAttribute="top" secondItem="Hhu-Z1-h9S" secondAttribute="top" id="9ra-5Q-8Fo"/>
+                            <constraint firstAttribute="bottom" secondItem="yw2-Bh-DIZ" secondAttribute="bottom" id="Q3e-zR-UaT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qme-LH-UCm"/>
-                    <connections>
-                        <outlet property="segmentController" destination="y7D-8c-r9D" id="ZDg-dK-sob"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YK0-MJ-f0M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2974.8091603053435" y="1179.5774647887324"/>
         </scene>
-        <!--View For Profile-->
-        <scene sceneID="5TK-Ul-1cO">
-            <objects>
-                <viewController storyboardIdentifier="ViewForProfile" id="1cN-Re-Xy3" customClass="ViewForProfile" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Re-HQ-jPN">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FFc-cI-6Tw">
-                                <rect key="frame" x="16" y="432" width="361" height="356"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="s4t-S9-nZX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Fa-bL-teB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3673" y="1180"/>
-        </scene>
-        <!--View Controller-->
+        <!--Info For Signup-->
         <scene sceneID="FVK-Jd-Xyz">
             <objects>
-                <viewController id="mFB-bd-N0W" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="infoForSignup" id="mFB-bd-N0W" customClass="infoForSignup" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jvg-ei-9Vu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -565,10 +542,10 @@
             </objects>
             <point key="canvasLocation" x="975" y="-1477"/>
         </scene>
-        <!--View Controller-->
+        <!--Previous Login-->
         <scene sceneID="gz2-Qb-kv1">
             <objects>
-                <viewController id="9Wg-SZ-skD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="previousLogin" id="9Wg-SZ-skD" customClass="previousLogin" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N1M-xM-ffg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -626,10 +603,10 @@
             </objects>
             <point key="canvasLocation" x="54" y="-790"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup Page-->
         <scene sceneID="Lm6-NR-FAc">
             <objects>
-                <viewController id="vJL-1d-r2w" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signupPage" id="vJL-1d-r2w" customClass="signupPage" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nY5-wv-fYJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
