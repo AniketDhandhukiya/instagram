@@ -40,38 +40,6 @@ class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataS
         }
         return CGSize(width: 392, height: 542)
     }
-    
-
-//    class CollectionViewCellForStory : UICollectionViewCell {
-//        var titleLabel: UILabel = {
-//            let label = UILabel()
-//            label.translatesAutoresizingMaskIntoConstraints = false
-//            label.textAlignment = .center
-//            label.textColor = .black
-//            return label
-//        }()
-//
-//        override init(frame: CGRect) {
-//            super.init(frame: frame)
-//            setupViews()
-//        }
-//
-//        required init?(coder aDecoder: NSCoder) {
-//            super.init(coder: aDecoder)
-//            setupViews()
-//        }
-//
-//        private func setupViews() {
-//            addSubview(titleLabel)
-//
-//            NSLayoutConstraint.activate([
-//                titleLabel.topAnchor.constraint(equalTo: topAnchor),
-//                titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-//                titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
-//                titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
-//            ])
-//        }
-//    }
 
 }
 

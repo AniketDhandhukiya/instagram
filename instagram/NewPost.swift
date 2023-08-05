@@ -7,23 +7,26 @@
 
 import UIKit
 
-class NewPost: UIViewController {
+class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerControllerDelegate {
 
+    @IBOutlet weak var ImageForUpload: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func gallaryButtonAction(_ sender: Any) {
+        openGallery()
     }
-    */
-
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        ImageForUpload.image = info[.editedImage] as! UIImage
+        dismiss(animated: true,completion: nil)
+    }
+    func openGallery(){
+        let gallery = UIImagePickerController()
+        gallery.delegate = self
+        gallery.allowsEditing = true
+        gallery.sourceType = .photoLibrary
+        present(gallery, animated: true,completion: nil)
+    }
 }

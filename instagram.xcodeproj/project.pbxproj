@@ -14,6 +14,8 @@
 		C2D0FA8B2A7E50D100185992 /* signupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA8A2A7E50D100185992 /* signupPage.swift */; };
 		C2D0FA8D2A7E518D00185992 /* previousLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA8C2A7E518D00185992 /* previousLogin.swift */; };
 		C2D0FA8F2A7E51B400185992 /* infoForSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA8E2A7E51B400185992 /* infoForSignup.swift */; };
+		C2D0FA912A7E562300185992 /* CollectionViewCellForSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA902A7E562300185992 /* CollectionViewCellForSearch.swift */; };
+		C2D0FA932A7E587100185992 /* CollectionViewCellForReels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA922A7E587100185992 /* CollectionViewCellForReels.swift */; };
 		C2D8F3192A6E8518007FD693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8F3182A6E8518007FD693 /* AppDelegate.swift */; };
 		C2D8F31B2A6E8518007FD693 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8F31A2A6E8518007FD693 /* SceneDelegate.swift */; };
 		C2D8F31D2A6E8518007FD693 /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8F31C2A6E8518007FD693 /* mainView.swift */; };
@@ -35,6 +37,8 @@
 		C2D0FA8A2A7E50D100185992 /* signupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupPage.swift; sourceTree = "<group>"; };
 		C2D0FA8C2A7E518D00185992 /* previousLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previousLogin.swift; sourceTree = "<group>"; };
 		C2D0FA8E2A7E51B400185992 /* infoForSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoForSignup.swift; sourceTree = "<group>"; };
+		C2D0FA902A7E562300185992 /* CollectionViewCellForSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForSearch.swift; sourceTree = "<group>"; };
+		C2D0FA922A7E587100185992 /* CollectionViewCellForReels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForReels.swift; sourceTree = "<group>"; };
 		C2D8F3152A6E8518007FD693 /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D8F3182A6E8518007FD693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2D8F31A2A6E8518007FD693 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				C2D8F31A2A6E8518007FD693 /* SceneDelegate.swift */,
 				C2D8F31C2A6E8518007FD693 /* mainView.swift */,
 				C2D8F31E2A6E8518007FD693 /* Main.storyboard */,
+				C2D0FA902A7E562300185992 /* CollectionViewCellForSearch.swift */,
 				C2D0FA8E2A7E51B400185992 /* infoForSignup.swift */,
 				C2D0FA8C2A7E518D00185992 /* previousLogin.swift */,
 				C2D0FA8A2A7E50D100185992 /* signupPage.swift */,
@@ -114,6 +119,7 @@
 				C2E4654F2A7A5FBA007D8F9A /* profilePage.swift */,
 				C2E4654B2A7A5F63007D8F9A /* NewPost.swift */,
 				C2E4654D2A7A5F9B007D8F9A /* reelsPage.swift */,
+				C2D0FA922A7E587100185992 /* CollectionViewCellForReels.swift */,
 				C2E465492A7A5F38007D8F9A /* searchPage.swift */,
 				C26629482A6FD9F600CDD3F4 /* CollectionViewCellForPost.swift */,
 				C26629462A6FC6E100CDD3F4 /* CollectionViewCellForStory.swift */,
@@ -247,6 +253,8 @@
 				C2D8F3192A6E8518007FD693 /* AppDelegate.swift in Sources */,
 				C2D0FA8D2A7E518D00185992 /* previousLogin.swift in Sources */,
 				C2D0FA8B2A7E50D100185992 /* signupPage.swift in Sources */,
+				C2D0FA932A7E587100185992 /* CollectionViewCellForReels.swift in Sources */,
+				C2D0FA912A7E562300185992 /* CollectionViewCellForSearch.swift in Sources */,
 				C2E4654C2A7A5F63007D8F9A /* NewPost.swift in Sources */,
 				C2E4654A2A7A5F38007D8F9A /* searchPage.swift in Sources */,
 				C2E465502A7A5FBA007D8F9A /* profilePage.swift in Sources */,
