@@ -2,7 +2,7 @@
 //  profilePage.swift
 //  instagram
 //
-//  Created by R82 on 02/08/23.
+//  Created by R82 on 02/08/23
 //
 
 import UIKit
