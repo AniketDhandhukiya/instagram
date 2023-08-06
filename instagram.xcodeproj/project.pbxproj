@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6634B83D949F467C64E5DE69 /* Pods_instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64D35B21EFDE13737D2E640 /* Pods_instagram.framework */; };
+		C224DA252A7F9D050037D09E /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224DA242A7F9D050037D09E /* tabBar.swift */; };
 		C25B8A402A7CFC5C004DED00 /* ViewControllerForPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25B8A3F2A7CFC5C004DED00 /* ViewControllerForPostView.swift */; };
 		C26629472A6FC6E100CDD3F4 /* CollectionViewCellForStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26629462A6FC6E100CDD3F4 /* CollectionViewCellForStory.swift */; };
 		C26629492A6FD9F600CDD3F4 /* CollectionViewCellForPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26629482A6FD9F600CDD3F4 /* CollectionViewCellForPost.swift */; };
-		C2D0FA8B2A7E50D100185992 /* signupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA8A2A7E50D100185992 /* signupPage.swift */; };
+		C2D0FA8B2A7E50D100185992 /* signInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA8A2A7E50D100185992 /* signInPage.swift */; };
 		C2D0FA8D2A7E518D00185992 /* previousLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA8C2A7E518D00185992 /* previousLogin.swift */; };
 		C2D0FA8F2A7E51B400185992 /* infoForSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA8E2A7E51B400185992 /* infoForSignup.swift */; };
 		C2D0FA912A7E562300185992 /* CollectionViewCellForSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0FA902A7E562300185992 /* CollectionViewCellForSearch.swift */; };
@@ -31,10 +32,11 @@
 
 /* Begin PBXFileReference section */
 		72F10291C85D93731F44B53E /* Pods-instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.release.xcconfig"; path = "Target Support Files/Pods-instagram/Pods-instagram.release.xcconfig"; sourceTree = "<group>"; };
+		C224DA242A7F9D050037D09E /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
 		C25B8A3F2A7CFC5C004DED00 /* ViewControllerForPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerForPostView.swift; sourceTree = "<group>"; };
 		C26629462A6FC6E100CDD3F4 /* CollectionViewCellForStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForStory.swift; sourceTree = "<group>"; };
 		C26629482A6FD9F600CDD3F4 /* CollectionViewCellForPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForPost.swift; sourceTree = "<group>"; };
-		C2D0FA8A2A7E50D100185992 /* signupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupPage.swift; sourceTree = "<group>"; };
+		C2D0FA8A2A7E50D100185992 /* signInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInPage.swift; sourceTree = "<group>"; };
 		C2D0FA8C2A7E518D00185992 /* previousLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previousLogin.swift; sourceTree = "<group>"; };
 		C2D0FA8E2A7E51B400185992 /* infoForSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoForSignup.swift; sourceTree = "<group>"; };
 		C2D0FA902A7E562300185992 /* CollectionViewCellForSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForSearch.swift; sourceTree = "<group>"; };
@@ -110,10 +112,11 @@
 				C2D8F31A2A6E8518007FD693 /* SceneDelegate.swift */,
 				C2D8F31C2A6E8518007FD693 /* mainView.swift */,
 				C2D8F31E2A6E8518007FD693 /* Main.storyboard */,
+				C224DA242A7F9D050037D09E /* tabBar.swift */,
 				C2D0FA902A7E562300185992 /* CollectionViewCellForSearch.swift */,
 				C2D0FA8E2A7E51B400185992 /* infoForSignup.swift */,
 				C2D0FA8C2A7E518D00185992 /* previousLogin.swift */,
-				C2D0FA8A2A7E50D100185992 /* signupPage.swift */,
+				C2D0FA8A2A7E50D100185992 /* signInPage.swift */,
 				C25B8A3F2A7CFC5C004DED00 /* ViewControllerForPostView.swift */,
 				C2E465512A7A5FE7007D8F9A /* ViewForProfile.swift */,
 				C2E4654F2A7A5FBA007D8F9A /* profilePage.swift */,
@@ -249,10 +252,11 @@
 				C26629492A6FD9F600CDD3F4 /* CollectionViewCellForPost.swift in Sources */,
 				C2E465522A7A5FE7007D8F9A /* ViewForProfile.swift in Sources */,
 				C2E4654E2A7A5F9B007D8F9A /* reelsPage.swift in Sources */,
+				C224DA252A7F9D050037D09E /* tabBar.swift in Sources */,
 				C2D8F31D2A6E8518007FD693 /* mainView.swift in Sources */,
 				C2D8F3192A6E8518007FD693 /* AppDelegate.swift in Sources */,
 				C2D0FA8D2A7E518D00185992 /* previousLogin.swift in Sources */,
-				C2D0FA8B2A7E50D100185992 /* signupPage.swift in Sources */,
+				C2D0FA8B2A7E50D100185992 /* signInPage.swift in Sources */,
 				C2D0FA932A7E587100185992 /* CollectionViewCellForReels.swift in Sources */,
 				C2D0FA912A7E562300185992 /* CollectionViewCellForSearch.swift in Sources */,
 				C2E4654C2A7A5F63007D8F9A /* NewPost.swift in Sources */,

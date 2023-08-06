@@ -176,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975" y="-1420"/>
+            <point key="canvasLocation" x="2975" y="-1406"/>
         </scene>
         <!--Search Page-->
         <scene sceneID="d73-0j-S5G">
@@ -379,6 +379,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Change Profile Photo"/>
+                                <connections>
+                                    <action selector="changePhotoButtonAction:" destination="mFB-bd-N0W" eventType="touchUpInside" id="0hy-d7-nv5"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0wz-ED-5gh">
                                 <rect key="frame" x="16" y="338" width="361" height="34"/>
@@ -421,11 +424,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="mFB-bd-N0W" eventType="touchUpInside" id="qZD-fM-plO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nxw-ON-keP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="bioTextField" destination="Ut9-Ps-Jj0" id="8Eg-e5-NKp"/>
+                        <outlet property="emailAddressTextField" destination="o5c-VL-zrZ" id="JJc-DO-BEd"/>
+                        <outlet property="nameTextField" destination="0wz-ED-5gh" id="aAQ-dH-BfC"/>
+                        <outlet property="passwordTextField" destination="Rk5-Na-rgJ" id="PSn-1L-IVe"/>
+                        <outlet property="profilePicture" destination="EY5-CQ-szc" id="CKc-xA-eLf"/>
+                        <outlet property="reenterPassword" destination="TpJ-vp-dcc" id="cIc-Kt-8if"/>
+                        <outlet property="userNameTextField" destination="7dh-qe-gJl" id="9QZ-v5-a1f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7d-ZH-KrK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -507,10 +522,10 @@
             </objects>
             <point key="canvasLocation" x="54" y="-790"/>
         </scene>
-        <!--Signup Page-->
+        <!--Sign In Page-->
         <scene sceneID="Lm6-NR-FAc">
             <objects>
-                <viewController storyboardIdentifier="signupPage" id="vJL-1d-r2w" customClass="signupPage" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signInPage" id="vJL-1d-r2w" customClass="signInPage" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nY5-wv-fYJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -538,6 +553,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Log In">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="vJL-1d-r2w" eventType="touchUpInside" id="h9w-HV-5rA"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T7c-Vf-qAH">
                                 <rect key="frame" x="0.0" y="765" width="393" height="53"/>
@@ -549,6 +567,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Don't have an account? Sign up."/>
+                                        <connections>
+                                            <action selector="sighupButtonAction:" destination="vJL-1d-r2w" eventType="touchUpInside" id="k9N-mG-ZFQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92240524970000004" green="0.92240524970000004" blue="0.92240524970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -572,10 +593,15 @@
                         <viewLayoutGuide key="safeArea" id="QJP-Gq-kq9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="qFM-XK-4us"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="A5H-xw-pmH" id="bnJ-pZ-kWK"/>
+                        <outlet property="phoneOrEmailTextField" destination="zll-bV-CnH" id="1Vd-Gl-zvf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vn2-UL-jQ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981" y="-790"/>
+            <point key="canvasLocation" x="-703" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jWh-GS-EpN">
@@ -587,17 +613,17 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="fFs-Oc-OMV" kind="relationship" relationship="rootViewController" id="gXp-T1-XYd"/>
+                        <segue destination="vJL-1d-r2w" kind="relationship" relationship="rootViewController" id="3Zd-pq-Vp9"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oM4-hP-8qu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="-1689" y="-35"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar-->
         <scene sceneID="Ob0-uw-01C">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fFs-Oc-OMV" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" id="fFs-Oc-OMV" customClass="tabBar" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="pRn-ew-rlO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EQn-vg-eaT">

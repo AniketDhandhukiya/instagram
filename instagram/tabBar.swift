@@ -1,13 +1,13 @@
 //
-//  signupPage.swift
+//  tabBar.swift
 //  instagram
 //
-//  Created by R82 on 05/08/23.
+//  Created by R82 on 06/08/23.
 //
 
 import UIKit
 
-class signupPage: UIViewController {
+class tabBar: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCore
 
 class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
    
@@ -40,6 +41,8 @@ class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataS
         }
         return CGSize(width: 392, height: 542)
     }
+    
+
 
 }
 
