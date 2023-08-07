@@ -17197,7 +17197,6 @@
 		C21E87420C25AF10B32D00EB99DFE141 /* FIRVerifyClientResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVerifyClientResponse.m; path = FirebaseAuth/Sources/Backend/RPC/FIRVerifyClientResponse.m; sourceTree = "<group>"; };
 		C222A682F0AF2428324014181A7D9707 /* http_status.upbdefs.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = http_status.upbdefs.c; path = "src/core/ext/upbdefs-generated/envoy/type/v3/http_status.upbdefs.c"; sourceTree = "<group>"; };
 		C2233AD4C671FC7EBEA89A5E3B16BBCB /* variant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = variant.h; path = absl/types/variant.h; sourceTree = "<group>"; };
-		C224DA232A7F96590037D09E /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		C235F163C507067E4F72190610E0EC9F /* hashtable_debug_hooks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hashtable_debug_hooks.h; path = absl/container/internal/hashtable_debug_hooks.h; sourceTree = "<group>"; };
 		C24328B9EB305316363EAE0560B44C6B /* evaluate_args.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evaluate_args.h; path = src/core/lib/security/authorization/evaluate_args.h; sourceTree = "<group>"; };
 		C28839372632E0AF36A2E7869703E244 /* cmp.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = cmp.c; path = src/crypto/fipsmodule/bn/cmp.c; sourceTree = "<group>"; };
@@ -22439,7 +22438,6 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				C224DA232A7F96590037D09E /* GoogleService-Info (1).plist */,
 				D68CA58901FBF589D75F5E40F1EAF5BA /* Frameworks */,
 				02108A7FC1179DECC583B1C2375B94F4 /* Pods */,
 				38270187E85BE6DDC0CF0AA03E31EE35 /* Products */,

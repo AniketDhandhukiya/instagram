@@ -6,13 +6,24 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseFirestore
 
 class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerControllerDelegate {
 
     @IBOutlet weak var ImageForUpload: UIImageView!
+    
+    var ref: DatabaseReference!
+    var refr: Firestore!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        ref = Database.database().reference()
+        refr = Firestore.firestore()
+        
     }
     
     @IBAction func gallaryButtonAction(_ sender: Any) {
@@ -29,4 +40,5 @@ class NewPost: UIViewController, UINavigationControllerDelegate & UIImagePickerC
         gallery.sourceType = .photoLibrary
         present(gallery, animated: true,completion: nil)
     }
+   
 }

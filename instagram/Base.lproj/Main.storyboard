@@ -370,7 +370,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="tick"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EY5-CQ-szc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile-icon-design-free-vector" translatesAutoresizingMaskIntoConstraints="NO" id="EY5-CQ-szc">
                                 <rect key="frame" x="122" y="111" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -601,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vn2-UL-jQ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-703" y="-35"/>
+            <point key="canvasLocation" x="-726" y="-1473"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jWh-GS-EpN">
@@ -618,7 +618,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oM4-hP-8qu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1689" y="-35"/>
+            <point key="canvasLocation" x="-1376" y="-1473"/>
         </scene>
         <!--Tab Bar-->
         <scene sceneID="Ob0-uw-01C">
@@ -879,6 +879,7 @@
         <image name="more" width="24" height="24"/>
         <image name="more_vert_FILL0_wght400_GRAD0_opsz48" width="48" height="48"/>
         <image name="pngwing.com (5)" width="3001" height="2000"/>
+        <image name="profile-icon-design-free-vector" width="1920" height="1920"/>
         <image name="save-instagram (2)" width="24" height="24"/>
         <image name="search (1)" width="24" height="24"/>
         <image name="send (2)" width="24" height="24"/>

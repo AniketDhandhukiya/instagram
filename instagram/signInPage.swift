@@ -16,16 +16,20 @@ class signInPage: UIViewController {
 
     }
     @IBAction func loginButtonAction(_ sender: Any) {
-        
-        
         navigatioForLoginButton()
     }
     @IBAction func sighupButtonAction(_ sender: Any) {
-        
+        navigatioForSignupButton()
     }
     
     func navigatioForLoginButton(){
         let navigate = storyboard?.instantiateViewController(withIdentifier: "tabBar") as! tabBar
         navigationController?.pushViewController(navigate, animated: true)
     }
+    
+    func navigatioForSignupButton(){
+        let navigate = storyboard?.instantiateViewController(withIdentifier: "infoForSignup") as! infoForSignup
+        navigationController?.pushViewController(navigate, animated: true)
+    }
+    
 }
