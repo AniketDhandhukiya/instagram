@@ -7,17 +7,28 @@
 
 import UIKit
 import FirebaseCore
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseFirestore
+
+struct Data{
+    var userImage : String
+}
 
 class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
-    var array = ["a","h","e"]
-    let userid = Auth.auth().currentUser?.uid
+    var array = ["e","f"]
     
+    let userid = Auth.auth().currentUser?.uid
+    var arr = [Data]()
+    var ref: DatabaseReference!
+    var refr = Firestore.firestore()
     @IBOutlet weak var cvForPost: UICollectionView!
     @IBOutlet weak var cvForStory: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
         
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -31,6 +42,9 @@ class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataS
         if collectionView == cvForStory{
             let cell = cvForStory.dequeueReusableCell(withReuseIdentifier: "cellForStory", for: indexPath) as! CollectionViewCellForStory
             cell.storyImage.layer.cornerRadius = 40
+            if indexPath.row == 0  {
+                cell.storyImage.image = 
+            }
             return cell
         }
         let cells = cvForPost.dequeueReusableCell(withReuseIdentifier: "cellForPost", for: indexPath) as! CollectionViewCellForPost
@@ -42,19 +56,18 @@ class mainView: UIViewController, UICollectionViewDelegate,UICollectionViewDataS
         }
         return CGSize(width: 392, height: 542)
     }
+    
     func getdataFromFirestore(){
-        = Firestore.firestore().collection("User")
-        colRef.addSnapshotListener() { [self] (docuSnapshot, error) in
-            if let error = error {
-                print("something went wrong:\(error)")
-            }else{
-                for document in docuSnapshot!.documents {
-                    if document.documentID == userUid {
-                        userImage =  document["ProfileImageUrl"] as! String
-                        imageOutlet.sd_setImage(with : URL(string: userImage))
-                        print(userImage)
-                    }
+        refr.collection("User").addSnapshotListener{ [self] snapshot, error in
+            if  error == nil {
+                if let snapshot = snapshot {
+                    arr = snapshot.documents.map({ i in
+                        return Data(userImage: i["profilePicture"] as! String)
+                      
+                    })
                 }
+            } else {
+                print(error?.localizedDescription)
             }
         }
         

@@ -68,7 +68,7 @@ class infoForSignup: UIViewController,UINavigationControllerDelegate & UIImagePi
         Auth.auth().createUser(withEmail: emailAddressTextField.text!, password: passwordTextField.text!) { [self] authResult, error in
             if error == nil{
                 var uid = authResult?.user.uid
-                refr.collection("User").document(uid!).setData(["E-Mail": emailAddressTextField.text!,"password": passwordTextField.text!,"name": nameTextField.text!,"username":userNameTextField.text!,"bio":bioTextField.text!])
+                refr.collection("User").document(uid!).setData(["E-Mail": emailAddressTextField.text!,"password": passwordTextField.text!,"name": nameTextField.text!,"username":userNameTextField.text!,"bio":bioTextField.text!,"ProfilePicture":profilePicture.image?.description])
             }
         }
     }
